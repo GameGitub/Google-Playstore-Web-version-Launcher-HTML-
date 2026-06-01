@@ -1,13 +1,24 @@
 <!doctype html>
 <html>
 <head>
-  <title>Play Store</title
+  <title>My App</title>
+
   <link rel="apple-touch-icon" href="Play.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="My App">
 </head>
-<body>
+
+<body style="text-align:center; font-family:sans-serif; padding-top:100px">
+
+  <h2>My App</h2>
+
+  <button onclick="openStore()">Open Play Store</button>
+
   <script>
-    window.location.href = "https://play.google.com/store";
+    function openStore() {
+      window.location.href = "https://play.google.com/store";
+    }
   </script>
+
 </body>
 </html>
