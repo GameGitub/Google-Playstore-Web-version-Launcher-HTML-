@@ -1,16 +1,109 @@
 <!doctype html>
 <html>
 <head>
-  <title>Play Store</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Play</title>
+<link rel="apple-touch-icon" href="Play.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Play Store">
+<style>
+body {margin:0;
+    background:#000;
+    color:white;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+    overflow:hidden;}
 
-  <link rel="apple-touch-icon" href="Play.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Play Store">
+.logo-area{height:45vh;
+    position:relative;}
+
+.shape1{position:absolute;
+    width:220px;
+    height:140px;
+    background:#fbbc04;
+    border-radius:30px;
+    left:-40px;
+    top:90px;
+    transform:rotate(-20deg);}
+
+.shape2{position:absolute;
+    width:260px;
+    height:180px;
+    background:#ea4335;
+    border-radius:30px;
+    left:120px;
+    top:90px;
+    transform:rotate(35deg);}
+
+.shape3{position:absolute;
+    width:220px;
+    height:160px;
+    background:#34a853;
+    border-radius:30px;
+    right:-60px;
+    top:140px;
+    transform:rotate(-15deg);}
+
+.shape4{position:absolute;
+    width:120px;
+    height:120px;
+    background:#4285f4;
+    border-radius:50%;
+    left:90px;
+    top:150px;}
+
+.content{padding:40px;}
+
+.small{color:#d0d0d0;
+    font-size:18px;}
+
+h1{font-size:56px;
+    margin:20px 0;
+    line-height:1.05;}
+
+p{color:#cfcfcf;
+    font-size:22px;
+    line-height:1.5;} 
+
+button{width:85%;
+    max-width:500px;
+    height:60px;
+    border:none;
+    border-radius:999px;
+    font-size:22px;
+    background:#b9d0ff;
+    color:#1f3b70;
+    margin:30px auto;
+    display:block;}
+
+.dots{text-align:center;
+    color:#777;
+    font-size:24px;}
+</style>
 </head>
-
 <body>
-  <script>
-    window.location.replace("https://play.google.com/store");
-  </script>
+<div class="logo-area">
+<div class="shape1"></div>
+<div class="shape2"></div>
+<div class="shape3"></div>
+<div class="shape4"></div>
+</div>
+
+<div class="content">
+<div class="small">▶ Google Play</div>
+
+<h1>Welcome to<br>Google Play</h1>
+
+<p>
+Enjoy millions of the latest Android apps and games.
+Any time, anywhere, across your devices.
+</p>
+
+<button onclick="window.location.href='https://play.google.com/store'">
+Get started
+</button>
+
+<div class="dots">● ○</div>
+</div>
 </body>
 </html>
